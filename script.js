@@ -12,15 +12,15 @@ function makePairs() {
 
   for ( pairs1 of students) {
     if(pairs1.slice(-1) === "а") {
-      boys.push(pairs1);
+      girls.push(pairs1);
 }
    else{
-      girls.push(pairs1);
+      boys.push(pairs1);
     }
  }
     for(let i = 0; i < students.length / 2; i++) {
 
-      pairs.push([`${boys[i]} - ${girls[i]}`] );  
+      pairs.push([`${girls[i]} - ${boys[i]}`] );  
     }
   return  pairs;
 }
